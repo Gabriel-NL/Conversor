@@ -1,0 +1,16 @@
+#Create Virtual enviroment
+python -m venv venv
+
+#Activating virtual enviroment
+.\venv\Scripts\activate
+
+#If exception "PSSecurityException+FullyQualifiedErrorId UnauthorizedAccess" happens
+
+Set-ExecutionPolicy RemoteSigned -Scope Process
+
+#Deactivate virtual enviroment
+Deactivate
+
+#Install dependencies
+pip install pandas
+pip install openpyxl
